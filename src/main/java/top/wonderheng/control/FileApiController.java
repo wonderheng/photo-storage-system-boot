@@ -24,6 +24,7 @@ import java.util.*;
  * @CreateTime: 2018-12-27 20:05
  */
 @RestController
+@CrossOrigin(origins = "*",maxAge = 3306)
 @RequestMapping(value = "/api")
 public class FileApiController {
 
@@ -118,9 +119,8 @@ public class FileApiController {
             smallFile = fileService.saveFile(smallFile);
             //http://localhost:80/view/file?id=xxxx
             result.put("code", 200);
-            result.put("data", String.format("%s://%s:%d/api/show/%s",
+            result.put("data", String.format("%s://39.107.67.167:%d/api/show/%s",
                     req.getScheme(),
-                    req.getLocalAddr(),
                     req.getLocalPort(),
                     smallFile.getId()));
 

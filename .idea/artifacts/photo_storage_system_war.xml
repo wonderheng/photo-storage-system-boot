@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="photo-storage-system:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="photo-storage-system-boot-1.0.0.war">
-      <element id="artifact" artifact-name="photo-storage-system:war exploded" />
-    </root>
-  </artifact>
-</component>
